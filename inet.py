@@ -18,12 +18,13 @@ if st.button("🚀 Mulai Test Kecepatan"):
         ping_result = stt.results.ping                # ms
         
         st.success("✅ Tes selesai!")
-        st.metric("Ping", f"{ping_result:.2f} ms")
-        st.metric("Download", f"{download_speed:.2f} Mbps")
-        st.metric("Upload", f"{upload_speed:.2f} Mbps")
+        st.metric("Ping", f"{ping_result:.1f} ms")
+        st.metric("Download", f"{download_speed:.1f} Mbps")
+        st.metric("Upload", f"{upload_speed:.1f} Mbps")
 
     except Exception as e:
         st.error(f"Terjadi kesalahan: {e}")
 
 st.write("---")
-st.caption("Dibuat dengan ❤️ menggunakan Streamlit & speedtest-cli")
+st.caption("Dibuat dengan Ai tinggal copy-paste wkwk")
+
